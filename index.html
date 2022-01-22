@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="top">
+        <div class="top_title">
+            <h2>Welcome To My Quiz World</h2>
+        </div>
+    </div>
+    <hr class="line1">
+    <div class="main">
+        <!-- step1: username -->
+
+        <div class="inner-box">
+            <h3 class="text1">Enter Your Name</h3>
+            <input type="text" class="name">
+            <button type="submit" class="btn" onClick="Dashboard()">START</button>
+        </div>
+        
+        <!-- step2: quiz Page1 -->
+ 
+        <div class="inner">
+            <div class="inner-box1">
+                <h4 class="user">Welcome, <span class="username"></span></h4>
+                <hr class="line2">
+                <h3>😊 HTML Quiz Questions 😊</h3>
+                <hr class="line3">
+                <div class="quiz-btn">
+                    <button class="qbtn" onclick="Q(1)">1</button>
+                    <button class="qbtn" onclick="Q(2)">2</button>
+                    <button class="qbtn" onclick="Q(3)">3</button>
+                    <button class="qbtn" onclick="Q(4)">4</button>
+                    <button class="qbtn" onclick="Q(5)">5</button>
+                    <button class="qbtn" onclick="Q(6)">6</button>
+                    <button class="qbtn" onclick="Q(7)">7</button>
+                    <button class="qbtn" onclick="Q(8)">8</button>
+                    <button class="qbtn" onclick="Q(9)">9</button>
+                    <button class="qbtn" onclick="Q(10)">10</button>
+                    <button class="qbtn" onclick="Q(11)">11</button>
+                    <button class="qbtn" onclick="Q(12)">12</button>
+                    <button class="qbtn" onclick="Q(13)">13</button>
+                    <button class="qbtn" onclick="Q(14)">14</button>
+                    <button class="qbtn" onclick="Q(15)">15</button>
+                    <button class="qbtn" onclick="Q(16)">16</button>
+                </div>
+            </div>
+            <div class="inner-box2">
+                <div class="Question">
+                    <h2 class="Ques"></h2>
+                </div>
+
+                <hr class="line4">
+                <div class="opt-box">
+                    <input type="button" class="opt-btn1 choice" value="JVM" onclick="answer(1)">
+                    <input type="button" class="opt-btn2 choice" value="JRE" onclick="answer(2)">
+                    <input type="button" class="opt-btn3 choice" value="JDK" onclick="answer(3)">
+                    <input type="button" class="opt-btn4 choice" value="JDB" onclick="answer(4)">
+                </div>
+                <div class="btn-tab">
+                    <button id="bk_btn" onclick="back()">🢀 BACK</button>
+                    <button id="nxt_btn" onclick="next()">NEXT 🢂</button>
+                    <button id="final" onclick="final_scr()">SUBMIT</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="result">
+            <div class="inner-box3">
+                <h1 class="user">Congratulation <span class="player">xyz</span> !!</h1>
+                <hr class="line5">
+                <h1>Your Score is "<span id="score"></span>" Out of "80".</h1>
+                <br>
+                <br>
+                <button class="start-again" onclick="window.location.reload()">Start Again!!</button>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
