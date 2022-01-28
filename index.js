@@ -5,7 +5,7 @@ var ques = {
     },
     1: {
         "q": "2. The correct sequence of HTML tags for starting a webpage is -",
-        "op": ["Head, Title, HTML, body","HTML, Body, Title, Head","HTML, Head, Title, Body","HTML, Head, Title, Body"]
+        "op": ["Head, Title, HTML, body","HTML, Body, Title, Head","HTML, Title, Head, Body","HTML, Head, Title, Body"]
     },
     2: {
         "q": "3. How to create an unordered list (a list with the list items in bullets) in HTML?",
